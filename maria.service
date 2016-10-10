@@ -1,0 +1,13 @@
+[Unit]
+Description=Maria audio daemon
+After=sound.target
+
+[Service]
+Type=simple
+ExecStart=/home/pi/maria.py
+User=pi
+WorkingDirectory=/home/pi/
+Restart=always
+
+#[Install]
+#WantedBy=multi-user.target
